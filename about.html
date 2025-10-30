@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MoodFlix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MoodFlix</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="recommender.html" class="nav-link">Find Movies</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About MoodFlix</h1>
+            <p class="lead">Connecting emotions with cinema</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-section">
+                <h2>Our Mission</h2>
+                <p>MoodFlix was created to solve a simple problem: finding the right movie for how you're feeling right now. We believe that the best movie recommendations come from understanding your emotional state, not just your viewing history.</p>
+                <p>By combining mood-based filtering with powerful movie data from TMDb, we help you discover films that resonate with your current feelings, making every movie night perfect.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>How It Works</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-icon">🎭</div>
+                        <h3>Mood Detection</h3>
+                        <p>Select your current mood from our carefully curated emotional categories. Each mood is mapped to specific movie genres and themes.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">🎬</div>
+                        <h3>Smart Matching</h3>
+                        <p>Our algorithm searches through thousands of films, matching your mood with appropriate genres, ratings, and themes.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">⭐</div>
+                        <h3>Personalized Results</h3>
+                        <p>Get a curated list of movies perfect for your mood, complete with ratings, descriptions, and trailers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>Features</h2>
+                <ul class="features-list">
+                    <li><strong>Mood-Based Discovery:</strong> Six distinct mood categories to match any emotional state</li>
+                    <li><strong>Advanced Filters:</strong> Refine results by year and rating</li>
+                    <li><strong>Personal Watchlist:</strong> Save movies to watch later with local storage</li>
+                    <li><strong>Surprise Me:</strong> Get random recommendations when you can't decide</li>
+                    <li><strong>Trailer Integration:</strong> Watch trailers directly in the app</li>
+                    <li><strong>Detailed Information:</strong> Full movie details, cast, and ratings</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h2>Technology</h2>
+                <p>MoodFlix is built with modern web technologies:</p>
+                <ul class="tech-list">
+                    <li>Pure vanilla JavaScript (ES6+) for all functionality</li>
+                    <li>TMDb API for comprehensive movie data</li>
+                    <li>Responsive CSS design for all devices</li>
+                    <li>Local storage for persistent watchlist</li>
+                    <li>Async/await for smooth API interactions</li>
+                </ul>
+            </div>
+
+            <div class="about-section cta-box">
+                <h2>Ready to Start?</h2>
+                <p>Find your perfect movie match based on how you're feeling right now.</p>
+                <a href="recommender.html" class="btn btn-primary">Start Discovering</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MoodFlix</h3>
+                    <p>Discover movies that match your mood. Powered by TMDb API.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recommender.html">Find Movies</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MoodFlix. All rights reserved. This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

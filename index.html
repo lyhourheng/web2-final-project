@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodFlix - Discover Movies That Match Your Mood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MoodFlix</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="recommender.html" class="nav-link">Find Movies</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Movies That Match Your Mood</h1>
+            <p class="hero-subtitle">Let your emotions guide you to the perfect film. Our intelligent mood-based recommender finds movies that resonate with how you feel right now.</p>
+            <div class="hero-cta">
+                <a href="recommender.html" class="btn btn-primary">Start Discovering</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="mood-orb"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">1</div>
+                    <h3>Choose Your Mood</h3>
+                    <p>Select from a range of emotions - happy, sad, excited, romantic, or adventurous. Your mood is our compass.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">2</div>
+                    <h3>Get Personalized Picks</h3>
+                    <p>Our algorithm searches thousands of films to find the perfect matches for your current emotional state.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">3</div>
+                    <h3>Watch & Enjoy</h3>
+                    <p>Browse trailers, read details, and save favorites to your watchlist. Your perfect movie night awaits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mood Showcase Section -->
+    <section class="mood-showcase">
+        <div class="container">
+            <h2 class="section-title">Explore by Mood</h2>
+            <div class="mood-grid">
+                <div class="mood-card" data-mood="happy">
+                    <div class="mood-icon">😊</div>
+                    <h3>Happy</h3>
+                    <p>Feel-good comedies and uplifting stories</p>
+                </div>
+                <div class="mood-card" data-mood="sad">
+                    <div class="mood-icon">😢</div>
+                    <h3>Sad</h3>
+                    <p>Emotional dramas that touch the heart</p>
+                </div>
+                <div class="mood-card" data-mood="excited">
+                    <div class="mood-icon">🤩</div>
+                    <h3>Excited</h3>
+                    <p>Action-packed thrillers and adventures</p>
+                </div>
+                <div class="mood-card" data-mood="romantic">
+                    <div class="mood-icon">💕</div>
+                    <h3>Romantic</h3>
+                    <p>Love stories that warm your soul</p>
+                </div>
+                <div class="mood-card" data-mood="adventurous">
+                    <div class="mood-icon">🗺️</div>
+                    <h3>Adventurous</h3>
+                    <p>Epic journeys and daring quests</p>
+                </div>
+                <div class="mood-card" data-mood="mysterious">
+                    <div class="mood-icon">🔍</div>
+                    <h3>Mysterious</h3>
+                    <p>Mind-bending mysteries and suspense</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Your Perfect Movie?</h2>
+            <p>Join thousands of movie lovers discovering films that match their mood</p>
+            <a href="recommender.html" class="btn btn-primary btn-large">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MoodFlix</h3>
+                    <p>Discover movies that match your mood. Powered by TMDb API.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recommender.html">Find Movies</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MoodFlix. All rights reserved. This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

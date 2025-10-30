@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Movies - MoodFlix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MoodFlix</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="recommender.html" class="nav-link active">Find Movies</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        <!-- Mood Selection -->
+        <section class="mood-selection">
+            <h1>How are you feeling today?</h1>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="happy">
+                    <span class="mood-emoji">😊</span>
+                    <span>Happy</span>
+                </button>
+                <button class="mood-btn" data-mood="sad">
+                    <span class="mood-emoji">😢</span>
+                    <span>Sad</span>
+                </button>
+                <button class="mood-btn" data-mood="excited">
+                    <span class="mood-emoji">🤩</span>
+                    <span>Excited</span>
+                </button>
+                <button class="mood-btn" data-mood="romantic">
+                    <span class="mood-emoji">💕</span>
+                    <span>Romantic</span>
+                </button>
+                <button class="mood-btn" data-mood="adventurous">
+                    <span class="mood-emoji">🗺️</span>
+                    <span>Adventurous</span>
+                </button>
+                <button class="mood-btn" data-mood="mysterious">
+                    <span class="mood-emoji">🔍</span>
+                    <span>Mysterious</span>
+                </button>
+            </div>
+            <button id="surpriseBtn" class="surprise-btn">🎲 Surprise Me!</button>
+        </section>
+
+        <!-- Filters and Controls -->
+        <section class="controls">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="yearFilter">Year:</label>
+                    <select id="yearFilter">
+                        <option value="">All Years</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2010-2019">2010-2019</option>
+                        <option value="2000-2009">2000-2009</option>
+                        <option value="1990-1999">1990-1999</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="ratingFilter">Min Rating:</label>
+                    <select id="ratingFilter">
+                        <option value="0">All Ratings</option>
+                        <option value="7">7+ ⭐</option>
+                        <option value="8">8+ ⭐⭐</option>
+                        <option value="9">9+ ⭐⭐⭐</option>
+                    </select>
+                </div>
+            </div>
+            <div class="view-toggle">
+                <button id="moviesView" class="view-btn active">Movies</button>
+                <button id="watchlistView" class="view-btn">Watchlist (<span id="watchlistCount">0</span>)</button>
+            </div>
+        </section>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Finding perfect movies for you...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <!-- Movies Grid -->
+        <section id="moviesSection" class="movies-section">
+            <div id="moviesGrid" class="movies-grid"></div>
+        </section>
+
+        <!-- Watchlist Section -->
+        <section id="watchlistSection" class="movies-section hidden">
+            <div id="watchlistGrid" class="movies-grid"></div>
+            <div id="emptyWatchlist" class="empty-state hidden">
+                <p>Your watchlist is empty. Start adding movies you want to watch!</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Movie Modal -->
+    <div id="movieModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MoodFlix</h3>
+                    <p>Discover movies that match your mood. Powered by TMDb API.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recommender.html">Find Movies</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MoodFlix. All rights reserved. This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
