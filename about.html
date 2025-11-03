@@ -45,17 +45,17 @@
                 <h2>How It Works</h2>
                 <div class="process-steps">
                     <div class="process-step">
-                        <div class="step-icon">🎭</div>
+                        <div class="step-icon"></div>
                         <h3>Mood Detection</h3>
                         <p>Select your current mood from our carefully curated emotional categories. Each mood is mapped to specific movie genres and themes.</p>
                     </div>
                     <div class="process-step">
-                        <div class="step-icon">🎬</div>
+                        <div class="step-icon"></div>
                         <h3>Smart Matching</h3>
                         <p>Our algorithm searches through thousands of films, matching your mood with appropriate genres, ratings, and themes.</p>
                     </div>
                     <div class="process-step">
-                        <div class="step-icon">⭐</div>
+                        <div class="step-icon"></div>
                         <h3>Personalized Results</h3>
                         <p>Get a curated list of movies perfect for your mood, complete with ratings, descriptions, and trailers.</p>
                     </div>
@@ -91,6 +91,72 @@
                 <p>Find your perfect movie match based on how you're feeling right now.</p>
                 <a href="recommender.html" class="btn btn-primary">Start Discovering</a>
             </div>
+
+            <!-- Contact Form Section -->
+            <div class="about-section">
+                <h2>Get in Touch</h2>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Name *</label>
+                        <input 
+                            type="text" 
+                            id="contactName" 
+                            name="name" 
+                            required 
+                            minlength="2"
+                            placeholder="Your full name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">Email *</label>
+                        <input 
+                            type="email" 
+                            id="contactEmail" 
+                            name="email" 
+                            required
+                            placeholder="your.email@example.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <select id="contactSubject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="feedback">General Feedback</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea 
+                            id="contactMessage" 
+                            name="message" 
+                            required 
+                            minlength="10"
+                            rows="5"
+                            placeholder="Tell us what's on your mind..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" name="agree" required>
+                            I agree to the terms and conditions *
+                        </label>
+                        <span class="error-message" id="agreeError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formSuccess" class="success-message hidden"></div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -125,5 +191,6 @@
     </footer>
 
     <script src="home.js"></script>
+    <script src="form-validation.js"></script>
 </body>
 </html>

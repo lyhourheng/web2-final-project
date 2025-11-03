@@ -30,31 +30,44 @@
             <h1>How are you feeling today?</h1>
             <div class="mood-buttons">
                 <button class="mood-btn" data-mood="happy">
-                    <span class="mood-emoji">😊</span>
+                    <span class="mood-emoji"></span>
                     <span>Happy</span>
                 </button>
                 <button class="mood-btn" data-mood="sad">
-                    <span class="mood-emoji">😢</span>
+                    <span class="mood-emoji"></span>
                     <span>Sad</span>
                 </button>
                 <button class="mood-btn" data-mood="excited">
-                    <span class="mood-emoji">🤩</span>
+                    <span class="mood-emoji"></span>
                     <span>Excited</span>
                 </button>
                 <button class="mood-btn" data-mood="romantic">
-                    <span class="mood-emoji">💕</span>
+                    <span class="mood-emoji"></span>
                     <span>Romantic</span>
                 </button>
                 <button class="mood-btn" data-mood="adventurous">
-                    <span class="mood-emoji">🗺️</span>
+                    <span class="mood-emoji"></span>
                     <span>Adventurous</span>
                 </button>
                 <button class="mood-btn" data-mood="mysterious">
-                    <span class="mood-emoji">🔍</span>
+                    <span class="mood-emoji"></span>
                     <span>Mysterious</span>
                 </button>
             </div>
-            <button id="surpriseBtn" class="surprise-btn">🎲 Surprise Me!</button>
+            <button id="surpriseBtn" class="surprise-btn"> Surprise Me!</button>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search movies by title..." 
+                    aria-label="Search movies">
+                <button id="searchBtn" class="search-btn" aria-label="Search">🔍</button>
+                <button id="clearSearchBtn" class="clear-btn hidden" aria-label="Clear search">✕</button>
+            </div>
         </section>
 
         <!-- Filters and Controls -->
